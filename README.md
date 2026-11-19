@@ -1,1 +1,1 @@
-# react-study
+React 기초 실습 과제입니다.
