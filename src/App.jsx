@@ -3,17 +3,23 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Section from './components/Section'
-import Main from './components/Main'
+import Nav from './components/Nav'
+import Aside from './components/Aside'
+import Article from './components/Article'
 
 function App() {
   const getGreeting=(name)=>`안녕 ${name}`
   return (
     <main>
       <Header/>
-      <Main/>
-      <Section/>
-      <h1>Hello React!</h1>
-      <p>{getGreeting('Alice')}</p>
+      <Nav />
+      <div className="content">
+        <Section/>
+      <Article />
+      <Aside />
+      </div>
+      
+
       <Footer/>
     </main>
   )
